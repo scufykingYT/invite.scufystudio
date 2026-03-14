@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.scufy.astrogame",
+      "sha256_cert_fingerprints": [
+        "CA:19:F2:58:41:B0:8F:E1:E0:99:38:23:3F:18:97:8D:E5:4F:DA:D5:0B:C7:0F:C5:69:F1:AD:CC:34:BE:74:46",
+        "D3:25:B6:EF:15:4F:8B:0C:56:AD:1C:97:93:59:FB:63:7E:1D:5E:C4:46:F1:F3:33:3B:29:FF:7F:5D:21:6E:21"
+      ]
+    }
+  }
+]

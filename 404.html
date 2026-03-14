@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fehler | ScufyStudio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0b101b; color: white; }
+        .scufy-gradient { background: linear-gradient(135deg, #2d5bff 0%, #00ffcc 100%); }
+        .glass { background: rgba(22, 27, 40, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-6 text-center">
+
+    <div class="glass p-10 rounded-3xl max-w-lg w-full border-2 border-red-500/20 shadow-2xl shadow-red-500/10">
+        
+        <!-- Warn-Icon -->
+        <div class="w-20 h-20 bg-red-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+        </div>
+
+        <h1 class="text-3xl font-black italic tracking-tighter mb-4">FEHLER <span class="text-red-500">404</span></h1>
+        
+        <p class="text-gray-400 mb-8 leading-relaxed">
+            Hoppla! Die angeforderte Seite konnte nicht gefunden werden oder ist aktuell nicht verfügbar.
+        </p>
+
+        <!-- Countdown / Info -->
+        <div class="text-sm text-gray-500 mb-8">
+            Du wirst in <span id="countdown" class="text-blue-500 font-bold">5</span> Sekunden automatisch zu <br>
+            <span class="text-white font-medium">scufystudio.de</span> weitergeleitet.
+        </div>
+
+        <!-- Manueller Button -->
+        <a href="https://scufystudio.de" class="block w-full py-4 scufy-gradient text-black font-black rounded-xl hover:scale-105 transition transform shadow-lg shadow-blue-500/20 uppercase tracking-widest">
+            Jetzt zurückkehren
+        </a>
+    </div>
+
+    <footer class="mt-12 text-gray-600 text-[10px] uppercase tracking-[0.3em]">
+        &copy; 2026 ScufyStudio &bull; AstroGame Network
+    </footer>
+
+    <script>
+        // Automatischer Redirect nach 5 Sekunden
+        let timeLeft = 5;
+        const countdownElement = document.getElementById('countdown');
+
+        const timer = setInterval(() => {
+            timeLeft--;
+            countdownElement.innerText = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                window.location.href = "https://scufystudio.de";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>

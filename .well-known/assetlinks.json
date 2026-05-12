@@ -13,5 +13,18 @@
         "CE:83:B3:B2:03:16:C0:0E:31:A8:5F:F7:AC:79:F4:E0:0F:B1:16:F2:9D:63:7F:11:C9:BA:1D:E4:84:FA:C4:14"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.scufystudio.astrogame",
+      "sha256_cert_fingerprints": [
+        "55:CD:F2:2E:B7:E4:DF:28:E8:9C:17:8A:E6:5A:BC:D7:2E:A4:CF:63:DE:96:A5:BA:13:EA:87:AB:19:9B:55:0A"
+      ]
+    }
   }
 ]

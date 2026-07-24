@@ -23,7 +23,8 @@
       "namespace": "android_app",
       "package_name": "com.scufystudio.astrogame",
       "sha256_cert_fingerprints": [
-        "55:CD:F2:2E:B7:E4:DF:28:E8:9C:17:8A:E6:5A:BC:D7:2E:A4:CF:63:DE:96:A5:BA:13:EA:87:AB:19:9B:55:0A"
+        "55:CD:F2:2E:B7:E4:DF:28:E8:9C:17:8A:E6:5A:BC:D7:2E:A4:CF:63:DE:96:A5:BA:13:EA:87:AB:19:9B:55:0A",
+        "B2:6C:EA:F4:60:1A:36:41:4B:FB:FC:86:52:89:20:A2:C3:DC:4F:35:E1:F1:06:A6:D0:5B:37:35:90:C3:A8:AD"
       ]
     }
   }
